@@ -45,25 +45,27 @@
             
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
-                    <button data-modal-close class="modal-svg" type="button"><svg width="18" height="18">
+                    <button data-modal-close class="modal-svg" type="button"><svg class="modal-button-close" width="18" height="18">
                             <use xlink:href="./images/sprite2.svg#close"></use>
                         </svg>
                     </button>
                     <b>Оставьте свои данные, мы вам перезвоним</b>
                     <form class="modal-form">
-                        <label class="form-lebel"><span>Имя</span><span class="modal-form-input-waepper"><input type="text" name="message"> <svg class="modal-icon" width="18" height="18">
+                        <label class="form-lebel"><span>Имя</span><span class="modal-form-input-waepper"><input class="modal-form-input type="text" name="message"> <svg class="modal-icon" width="18" height="18">
                             <use href="./images/sprite2.svg#icon-person-black"></use>
                         </svg></span></label>
-                        <label class="form-lebel"><span>Телефон</span><span class="modal-form-input-waepper"><input type="text" name="message">
+                        <label class="form-lebel"><span>Телефон</span><span class="modal-form-input-waepper"><input class="modal-form-input type="text" name="message">
                         <svg class="modal-icon"  width="18" height="18">
                             <use href="./images/sprite2.svg#icon-phone-black"></use></svg></span></label>
-                        <label class="form-lebel"><span>Почта</span><span class="modal-form-input-waepper"><input type="text" name="message">
+                        <label class="form-lebel"><span>Почта</span><span class="modal-form-input-waepper"><input class="modal-form-input type="text" name="message">
                         <svg class="modal-icon"  width="18" height="18">
                             <use href="./images/sprite2.svg#icon-email-black"></use></svg></span></label>
                         <label class="form-lebel"><span>Комментарий</span> <textarea class="modal-form-message"  name="comment" placeholder="Введите текст"></textarea>
                         </label>
+                        <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="user-policy" value="accept-policy"><label class="modal-form-policy-text" for="user-policy" >Соглашаюсь с рассылкой и принимаю <a class="modal-link-policy" href=""> Условия договора</a></label>
+                        <button class="modal-form-btn" type="submit"> Отправить </button>
                     </form>
-                
+                    
 
                 </div>
             </div>
